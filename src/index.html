@@ -4,20 +4,29 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-  <div class="container">
-    <form class="user-form">
-      <input type="text" class="form-input" placeholder="Search images..." name="input" required />
-      <button type="submit" class="form-button">Search</button>
-    </form>
-  
-    <div class="loader hidden"></div>
-  
-    <ul class="gallery"></ul>
-  </div>
+    <div class="container">
+      <form class="user-form">
+        <input
+          type="text"
+          class="form-input"
+          placeholder="Search images..."
+          name="input"
+          required
+        />
+        <button type="submit" class="form-button">Search</button>
+      </form>
+
+      <ul class="gallery"></ul>
+
+      <button type="button" class="hidden btn-load">Load more</button>
+
+      <div class="loader hidden"></div>
+    </div>
+
     <script type="module" src="./main.js"></script>
   </body>
 </html>
