@@ -59,7 +59,7 @@ export async function fetchImg(input) {
 export async function onLoadClick() {
   page += 1;
   const totalPages = Math.ceil(totalHits / perPage);
-  if (page >= totalPages) {
+  if (page > totalPages) {
     refs.btnLoad.classList.add('hidden');
     onError(LIMIT);
   } else {
